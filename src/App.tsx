@@ -1,6 +1,11 @@
-import React, { useState } from 'react'
-import logo from './logo.svg'
 import './App.css'
+
+import React, { useState } from 'react'
+
+import logo from './logo.svg'
+
+export const u = 12
+console.log('exporting u really screws up HMR :(', u)
 
 function App() {
   const [count, setCount] = useState(0)
